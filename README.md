@@ -1,16 +1,67 @@
-# appcat
+<h2>MovieApp</h2>
+<img src="https://github.com/tu-usuario/tu-repo/raw/main/assets/icon.png" width="100" />
 
-Project pragma
 
-## Getting Started
+📌 Introducción
+MovieApp es una aplicación Flutter que consume una API REST pública proporcionada por [The Movie Database (TMDB)](https://developer.themoviedb.org/docs/getting-started) para mostrar una lista de películas populares con paginación infinita.
 
-This project is a starting point for a Flutter application.
+🛠 Requisitos Previos
 
-A few resources to get you started if this is your first Flutter project:
+* Antes de comenzar verificar los siguientes elementos:
+* 
+* Flutter (versión recomendada: 3.27.3)
+* 
+* Dart (versión compatible con Flutter)
+* 
+* Un editor de texto como Visual Studio Code o Android Studio
+* 
+* Un emulador o dispositivo físico para probar la aplicación
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+🚀 Instalación y Configuración
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Clonar el repositorio:
+
+git clone https://github.com/tu-usuario/movieapp.git
+cd movieapp
+
+Instalar dependencias:
+
+flutter pub get
+
+Ejecutar la aplicación:
+
+flutter run
+
+
+📌 Funcionalidades
+
+* Búsqueda de películas
+* Detalles de películas
+* Marcar película como favorita 
+* Modo Oscuro/Claro
+* Paginación infinita
+
+
+📂 Estructura del Proyecto
+
+El proyecto sigue una arquitectura por capas utilizando Riverpod para la gestión de estado:
+
+lib/
+│── core/             # Configuración API
+│── data/             # Repositorios y fuentes de datos
+│── domain/           # Lógica de negocio y modelos
+│── presentation/     # Widgets, Screens y providers de UI
+│── main.dart         # Punto de entrada de la aplicación
+
+
+💡 Decisiones Técnicas y Arquitectura
+
+📌 Gestión del Estado: Riverpod
+
+Se eligió Riverpod debido a que es una herramienta confiable que facilita el desarrollo, mejora el rendimiento y es posible la futura escalabilidad de la app.
+
+📌 Arquitectura por Capas
+
+Se sigue un patrón de arquitectura por capas para mantener una separación clara entre UI, lógica de negocio y datos.
+
+
