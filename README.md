@@ -1,11 +1,12 @@
-#MovieApp
+# MovieApp
+<img src="https://github.com/tu-usuario/tu-repo/raw/main/assets/icon.png" width="100" />
 
 
+## Introducción 📌
 
-📌 #Introducción
 MovieApp es una aplicación Flutter que consume una API REST pública proporcionada por [The Movie Database (TMDB)](https://developer.themoviedb.org/docs/getting-started) para mostrar una lista de películas populares con paginación infinita.
 
-🛠 #Requisitos Previos
+## Requisitos Previos 🛠 
 
 * Antes de comenzar verificar los siguientes elementos:
 * Flutter (versión recomendada: 3.27.3)
@@ -13,18 +14,18 @@ MovieApp es una aplicación Flutter que consume una API REST pública proporcion
 * Un editor de texto como Visual Studio Code o Android Studio
 * Un emulador o dispositivo físico para probar la aplicación
 
-🚀 #Instalación y Configuración
+## Instalación y Configuración 🚀 
 
-##Clonar el repositorio:
+### Clonar el repositorio:
 * git clone https://github.com/tu-usuario/movieapp.git
 * cd movieapp
-##Instalar dependencias:
+### Instalar dependencias:
 * flutter pub get 
-##Ejecutar la aplicación:
+### Ejecutar la aplicación:
 * flutter run
 
 
-📌 #Funcionalidades
+## Funcionalidades 📌 
 
 * Búsqueda de películas
 * Detalles de películas
@@ -33,25 +34,25 @@ MovieApp es una aplicación Flutter que consume una API REST pública proporcion
 * Paginación infinita
 
 
-📂 #Estructura del Proyecto
+## Estructura del Proyecto 📂 
 
 El proyecto sigue una arquitectura por capas utilizando Riverpod para la gestión de estado:
-
+```
 lib/
 │── core/             # Configuración API
 │── data/             # Repositorios y fuentes de datos
 │── domain/           # Lógica de negocio y modelos
 │── presentation/     # Widgets, Screens y providers de UI
 │── main.dart         # Punto de entrada de la aplicación
+```
 
+## Decisiones Técnicas y Arquitectura 💡 
 
-💡 #Decisiones Técnicas y Arquitectura
-
-📌 ##Gestión del Estado: Riverpod
+### Gestión del Estado: Riverpod 📌 
 
 Se eligió Riverpod debido a que es una herramienta confiable que facilita el desarrollo, mejora el rendimiento y es posible la futura escalabilidad de la app.
 
-📌 ##Arquitectura por Capas
+### Arquitectura por Capas 📌 
 
 Se sigue un patrón de arquitectura por capas para mantener una separación clara entre UI, lógica de negocio y datos.
 
